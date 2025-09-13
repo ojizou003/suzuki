@@ -1,0 +1,16 @@
+[project]
+name = "suzuki"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.3.2",
+    "selenium>=4.35.0",
+    "tqdm>=4.67.1",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.30.1",
+]
