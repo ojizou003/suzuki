@@ -1447,9 +1447,11 @@ name = "suzuki"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "beautifulsoup4" },
     { name = "nbconvert" },
     { name = "notebook" },
     { name = "pandas" },
+    { name = "requests" },
     { name = "selenium" },
     { name = "tqdm" },
 ]
@@ -1461,9 +1463,11 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "beautifulsoup4", specifier = ">=4.13.5" },
     { name = "nbconvert", specifier = ">=7.16.6" },
     { name = "notebook", specifier = ">=7.4.5" },
     { name = "pandas", specifier = ">=2.3.2" },
+    { name = "requests", specifier = ">=2.32.5" },
     { name = "selenium", specifier = ">=4.35.0" },
     { name = "tqdm", specifier = ">=4.67.1" },
 ]
