@@ -131,8 +131,10 @@ def main():
         print("結果をCSVファイルに保存します...")
         result_df = pd.DataFrame(all_items)
         # 重複を除去
-        result_df.drop_duplicates(inplace=True)
-        print(f"最終的なアイテム数 (重複除去後): {len(result_df)}")
+        # result_df.drop_duplicates(inplace=True)
+        # print(f"最終的なアイテム数 (重複除去後): {len(result_df)}")
+        print(f"最終的なアイテム数 : {len(result_df)}")
+        print(f"重複しているアイテム数 : {result_df.duplicated().sum()}")
         
         try:
             result_df.to_csv("suzuki_parts.csv", index=False)
